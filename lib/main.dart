@@ -1,4 +1,5 @@
 import 'package:flirt/blocs/swipe/swipe_bloc.dart';
+import 'package:flirt/constants/theme.dart';
 import 'package:flirt/screens/home_screen.dart';
 import 'package:flirt/screens/user_screen.dart';
 import 'package:flutter/material.dart';
@@ -23,9 +24,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Flirt',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
+        theme: theme(),
         home: const UserPage(),
       ),
     );

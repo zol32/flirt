@@ -87,7 +87,7 @@ class UserPage extends StatelessWidget {
                 ),
                 Text(
                   '${user.bio}',
-                  style: Theme.of(context).textTheme.headline1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
                         height: 2,
                       ),
                 ),
