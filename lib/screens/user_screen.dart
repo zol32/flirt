@@ -69,6 +69,7 @@ class UserPage extends StatelessWidget {
               vertical: 8.0,
             ),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   '${user.name}, ${user.age}',
