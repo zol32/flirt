@@ -1,4 +1,5 @@
 import 'package:flirt/blocs/swipe/swipe_bloc.dart';
+import 'package:flirt/constants/routes.dart';
 import 'package:flirt/constants/theme.dart';
 import 'package:flirt/screens/home_screen.dart';
 import 'package:flirt/screens/user_screen.dart';
@@ -29,6 +30,9 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: theme(),
         home: const HomePage(),
+        routes: {
+          userScreenRoute: (context) => const UserPage(),
+        },
       ),
     );
   }
