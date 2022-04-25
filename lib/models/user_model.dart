@@ -3,6 +3,7 @@ class User {
   final String name;
   final int age;
   final List<String> imageUrls;
+  final List<String> intrests;
   final String bio;
   final String jobTitle;
 
@@ -11,6 +12,7 @@ class User {
     required this.name,
     required this.age,
     required this.imageUrls,
+    required this.intrests,
     required this.bio,
     required this.jobTitle,
   });
@@ -21,6 +23,7 @@ class User {
         name,
         age,
         imageUrls,
+        intrests,
         bio,
         jobTitle,
       ];
@@ -35,6 +38,7 @@ class User {
         'https://phantom-marca.unidadeditorial.es/341a9478190ebbb9984e09b1c3238ad8/resize/1320/f/jpg/assets/multimedia/imagenes/2022/01/12/16420121570853.jpg',
         'https://phantom-marca.unidadeditorial.es/0fb467c00ad2061a3ab26031985b6a7e/resize/1320/f/jpg/assets/multimedia/imagenes/2022/04/24/16507835695496.png',
       ],
+      intrests: ['Music', 'Coffee', 'Festivals'],
       jobTitle: 'Footballer',
       bio: 'I play at PSG, we suck.',
     ),
@@ -47,6 +51,7 @@ class User {
         'https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg',
         'https://i.dailymail.co.uk/1s/2022/04/18/20/56755485-10729225-Cristiano_Ronaldo_s_newborn_son_has_died_according_to_an_announc-a-12_1650308461559.jpg',
       ],
+      intrests: ['Music', 'Coffee', 'Festivals'],
       jobTitle: 'Footballer',
       bio: 'I play in Manchester, we really suck.',
     ),

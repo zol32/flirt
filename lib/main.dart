@@ -1,5 +1,6 @@
 import 'package:flirt/blocs/swipe/swipe_bloc.dart';
 import 'package:flirt/screens/home_screen.dart';
+import 'package:flirt/screens/user_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const HomePage(),
+        home: const UserPage(),
       ),
     );
   }
