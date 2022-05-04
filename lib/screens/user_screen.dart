@@ -1,14 +1,23 @@
 import 'package:flirt/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-
 import '../models/models.dart';
 
 class UserPage extends StatelessWidget {
-  const UserPage({Key? key}) : super(key: key);
+  static const String routeName = '/users';
+
+  static Route route({required User user}) {
+    return MaterialPageRoute(
+      settings: RouteSettings(name: routeName),
+      builder: (context) => UserPage(user: user),
+    );
+  }
+
+  final User user;
+
+  const UserPage({required this.user});
 
   @override
   Widget build(BuildContext context) {
-    final User user = User.users[0];
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
@@ -24,13 +33,16 @@ class UserPage extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(bottom: 40.0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15.0),
-                        image: DecorationImage(
-                          image: NetworkImage(User.users[0].imageUrls[0]),
-                          fit: BoxFit.cover,
-                        )),
+                  child: Hero(
+                    tag: 'user_image',
+                    child: Container(
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15.0),
+                          image: DecorationImage(
+                            image: NetworkImage(user.imageUrls[0]),
+                            fit: BoxFit.cover,
+                          )),
+                    ),
                   ),
                 ),
                 Align(
@@ -44,7 +56,7 @@ class UserPage extends StatelessWidget {
                           color: Theme.of(context).colorScheme.secondary,
                           icon: Icons.clear_rounded,
                         ),
-                        ChoiceButton(
+                        const ChoiceButton(
                           height: 80,
                           width: 80,
                           size: 30,
@@ -98,9 +110,9 @@ class UserPage extends StatelessWidget {
                   style: Theme.of(context).textTheme.headline2,
                 ),
                 Row(
-                  children: user.intrests
+                  children: user.interests
                       .map(
-                        (intrests) => Container(
+                        (interests) => Container(
                           padding: const EdgeInsets.all(5.0),
                           margin: const EdgeInsets.only(
                             top: 5.0,
@@ -113,7 +125,7 @@ class UserPage extends StatelessWidget {
                                 Theme.of(context).colorScheme.secondary,
                               ])),
                           child: Text(
-                            intrests,
+                            interests,
                             style: Theme.of(context)
                                 .textTheme
                                 .headline6!

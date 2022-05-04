@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "265839137932",
+    "project_id": "flirt-dating-app-levels",
+    "storage_bucket": "flirt-dating-app-levels.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265839137932:android:f68a815a9390f581c897a9",
+        "android_client_info": {
+          "package_name": "com.levels.flirt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265839137932-cfaqg9gsdie6370cap7oovpjsdl7p1qv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBe5gzb7ESoRtBA4mapgSEHhkS4pMVQ9no"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265839137932-cfaqg9gsdie6370cap7oovpjsdl7p1qv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
