@@ -1,4 +1,6 @@
-# flirt
+# Flirt
+
+Flirt is a dating app that aims to solve the issue of "fake-text" which we describe as a lack of real communication. Users who are matched get a chance to have a real conversation that could lead to future relationships. 
 
 A new Flutter project.
 
